@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <strong><title>Javascript Test</title></strong>
+    <link rel="stylesheet" href="jsTest.css">
+</head>
+<body onload="loadScores();">
+<input type="number" name="timer" id="timer">
+<div id="failed"><h2>You ran out of time</h2><h3>Please try again.</h3></div>
+
+
+<main id="titleScreen">
+    <h1>Javascript Test</h1>
+        <h4>30 seconds to complete the test,<br>3 seconds subtracted for incorrect answers</h4>
+        <div id="startButton" onclick="startTest();">START TEST</div>
+    <div id="highscores">
+        <b>High Scores</b>
+        Initials - Score<br>
+    </div>
+    </main>
+
+
+    <div id="success">
+        <h1>Test Complete!</h1>
+        <h3><input type="text" id="score"></h3>
+        <input type="text" name="initials" id="initials" maxlength="3" placeholder="Initials" autocomplete="off"><br>
+        <div id="save" onclick="saveTime();">SUBMIT SCORE</div>
+    </div>
+
+    <!--------------------------------------------------------------------------------------------------------->
+    <div id="1" class="question">
+        <h3>1 - Commonly used datatypes DO NOT include:</h3>
+        <ol type="a">
+            <li onclick="inc(1);">Strings</li>
+            <li onclick="inc(1);">Booleans</li>
+            <li onclick="cor(1);">Alerts</li>
+            <li onclick="inc(1);">Numbers</li>
+        </ol>
+    </div>
+
+    <div id="2" class="question">
+        <h3>2 - What does HTML stand for?</h3>
+        <ol type="a">
+            <li onclick="inc(2);">Hello to my Language</li>
+            <li onclick="inc(2);">His or Her Make List</li>
+            <li onclick="inc(2);">Hyperup make league</li>
+            <li onclick="cor(2);">Hypertext Markup Language</li>
+        </ol>
+    </div>
+
+    <div id="3" class="question">
+        <h3>3 - Who makes the Web standards?</h3>
+        <ol type="a">
+            <li onclick="inc(3);">Netscape</li>
+            <li onclick="cor(3);">World Wide Web Consortium</li>
+            <li onclick="inc(3);">Hypertext Transfer Protocol</li>
+            <li onclick="inc(3);">Sun Microsystems</li>
+        </ol>
+    </div>
+
+    <div id="4" class="question">
+        <h3>4 - What is the HTML element for largest heading?</h3>
+        <ol type="a">
+            <li onclick="cor(4);">h1 element</li>
+            <li onclick="inc(4);">Heading</li>
+            <li onclick="inc(4);">h3 element</li>
+            <li onclick="inc(4);">h2 element</li>
+        </ol>
+    </div>
+
+    <div id="5" class="question">
+        <h3>5 - What is HTML element for inserting a line break?</h3>
+        <ol type="a">
+            <li onclick="inc(5);">can use element</use></li>
+            <li onclick="inc(5);">do get element</li>
+            <li onclick="inc(5);">stop element</stop></li>
+            <li onclick="cor(5);">br element</li>
+        </ol>
+    </div>
+
+    <div id="6" class="question">
+        <h3>6 - What is HTML for adding a background color?</h3>
+        <ol type="a">
+            <li onclick="inc(6);">img tag</li>
+            <li onclick="inc(6);">addColor tagbg</li>
+            <li onclick="inc(6);">useColor</li>
+            <li onclick="cor(6);">style="back ground-color: color;"</li>
+        </ol>
+    </div>
+
+    <div id="7" class="question">
+        <h3>7 - What is HTML for creating a hyperlink?</h3>
+        <ol type="a">
+            <li onclick="inc(7);">add link</li>
+            <li onclick="inc(7);">dot com to</li>
+            <li onclick="inc(7);">hyper to link tab</li>
+            <li onclick="cor(7);">use the "a href" tag</li>
+        </ol>
+    </div>
+
+    <div id="8" class="question">
+        <h3>8 - What is the character to indicate an end tag?</h3>
+        <ol type="a">
+            <li onclick="inc(8);">backslash</li>
+            <li onclick="inc(8);">Ampersand Ampersand</li>
+            <li onclick="inc(8);">dot dot dot</li>
+            <li onclick="cor(8);">forward slash /</li>
+        </ol>
+    </div>
+
+    <div id="9" class="question">
+        <h3>9 - What is HTML to define an important text?</h3>
+        <ol type="a">
+            <li onclick="inc(9);">add boo</li>
+            <li onclick="inc(9);">use dot dot</li>
+            <li onclick="inc(9);">use em</li>
+            <li onclick="cor(9);">Use strong</li>
+        </ol>
+    </div>
+
+    <div id="10" class="question">
+        <h3>10 - What is HTML to define emphasized text?</h3>
+        <ol type="a">
+            <li onclick="cor(10);">use em</li>
+            <li onclick="inc(10);">use strong</li>
+            <li onclick="inc(10);">use quotes</li>
+            <li onclick="inc(10);">add a period</li>
+        </ol>
+    </div>
+    <!--------------------------------------------------------------------------------------------------------->
+    
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+}
+html, body{
+    background: #222;
+    color:#ccc;
+    text-align: center;
+    padding:10vw;
+    padding-top:8vh;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom:0;
+    
+}
+main *{
+    margin:4vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+#startButton{
+    padding:2vw;
+    font-size: 5vh;
+    border:2px solid white;
+    background: green;
+    color:white;
+    border-radius: 1vw;
+    cursor: pointer;
+    
+}
+#startButton:hover{
+    background: #44cc44;
+}
+#timer{
+    position: fixed;
+    top:5vh;
+    right:40vw;
+    width:20vw;
+    background: #222;
+    color:white;
+    border:0px solid white;
+    padding:1vw;
+    padding-left:0;
+    padding-right:0;
+    text-align: center;
+    font-size: 3vh;
+    display: none;
+    pointer-events: none;
+  
+}
+.question{
+    background: #333;
+    text-align: left;
+    padding:2vw;
+    display:none;
+    border:2px solid white;
+}
+.question h3{
+    text-decoration: underline;
+    margin:1vw;
+}
+.question ol{
+    margin-left:3vw;
+}
+li{
+    padding:1vw;
+    cursor: pointer;
+}
+li:hover{
+    background: black;
+    color:white;
+}
+#failed{
+    padding:2vw;
+    display:none;
+}
+
+#success *{
+    margin:2vw;
+}
+#success{
+    display:none;
+    text-align: center;
+    padding:2vw;
+    
+}
+
+#score{
+    background:#222;
+    border:0px solid white;
+    text-align: center;
+    font-size: 2em;
+    pointer-events: none;
+    color:green;
+    
+    
+}
+#save{
+    background: green;
+    padding:1vw;
+    margin-left:10vw;
+    margin-right: 10vw;
+    color:white;
+    cursor: pointer;
+    border:2px solid white;
+    border-radius: .5vw;
+}
+#save:hover{
+    background: #44cc44;
+}
+#initials{
+    background: #222;
+    color:white;
+    font-size:2em;
+    text-align: center;
+    border:1px solid white;
+}
+/***********************************************************************************************/
+@media only screen and (max-width:900px){
+    html, body{
+        padding:2vw;
+        padding-top:6vh;
+    }
+}
